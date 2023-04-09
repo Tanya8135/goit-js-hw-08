@@ -4,7 +4,7 @@ import 'simplelightbox/dist/simple-lightbox.min.css';
 import { galleryItems } from './gallery-items';
 // Change code below this line
 
-// зробити рефакторинг коду
+// зробити рефакторинг коду???
 const galleryList = document.querySelector('.gallery');
 const createGalleryItem = ({ preview, original, description }) =>
     `<li class="gallery__item">
