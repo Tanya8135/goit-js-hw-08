@@ -7,7 +7,7 @@ const STORAGE = "videoplayer-current-time";
 const iframe = document.querySelector('iframe');
 const player = new Player(iframe);
 
-// Обробник подій. 
+// Обробник подій. (подумать)
 player.on('timeupdate', throttle(function (data) {
     try {
         localStorage.setItem(STORAGE, JSON.stringify(data.seconds));
