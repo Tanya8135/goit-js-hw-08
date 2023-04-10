@@ -1,4 +1,3 @@
-
 import throttle from 'lodash/throttle';
 
 const KEY = "feedback-form-state";
@@ -39,8 +38,8 @@ feedbackForm.addEventListener('input', throttle(() => {
 feedbackForm.addEventListener('submit', (evt) => {
     evt.preventDefault(); /* скидання браузерних налаштувань */
     const data = { /* приймає пустий рядок */
-        email: '',
-        message: '',
+        email: emailInput.value,
+        message: messageTextarea.value,
     };
     localStorage.removeItem(KEY); /* очищення форми */
     emailInput.value = '';
